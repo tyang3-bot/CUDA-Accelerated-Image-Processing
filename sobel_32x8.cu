@@ -153,7 +153,7 @@ int main() {
     printf("Processed pixels: %d\n", N);
     printf("Threads per block: 256\n");
     printf("Grid dimensions: %d x %d\n",
-           (WIDTH + 15)/16, (HEIGHT + 15)/16);
+       blocks.x, blocks.y);
 
     CHECK(cudaFree(d_input));
     CHECK(cudaFree(d_output));
