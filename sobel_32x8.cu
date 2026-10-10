@@ -151,7 +151,7 @@ int main() {
 
     printf("CUDA Sobel completed!\n");
     printf("Processed pixels: %d\n", N);
-    printf("Threads per block: 256\n");
+    printf("Threads per block: %d\n", threads.x * threads.y);
     printf("Grid dimensions: %d x %d\n",
        blocks.x, blocks.y);
 
